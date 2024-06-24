@@ -1,0 +1,53 @@
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 300px; /* 넓이 조정 */
+    margin: 20px auto; /* 가운데 정렬 및 마진 설정 */
+    text-align: center; /* 텍스트 가운데 정렬 */
+  }
+  
+  .profile-picture {
+    width: 120px; /* 프로필 이미지 크기 조정 */
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 3px solid #CDA47A; /* 테두리 굵기 조정 */
+  }
+  
+  .profile-details {
+    text-align: center;
+  }
+  
+  .profile-nickname {
+    font-size: 1.8em; /* 닉네임 폰트 크기 증가 */
+    margin-bottom: 10px; /* 닉네임과 상세 정보 간격 조정 */
+    color: #333;
+  }
+  
+  .profile-info {
+    margin: 5px 0;
+    color: #666;
+    font-size: 1.1em; /* 상세 정보 폰트 크기 증가 */
+  }
+  
+  .logout-button {
+    margin-top: 15px; /* 로그아웃 버튼과 상세 정보 사이 여백 추가 */
+    padding: 8px 20px;
+    font-size: 1em;
+    background-color: #CDA47A;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .logout-button:hover {
+    background-color: #B58C5B;
+  }  

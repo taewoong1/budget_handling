@@ -1,0 +1,115 @@
+.favorites-container {
+  padding: 20px;
+  background-color: #CED5B2;
+  color: black;
+  border-radius: 10px;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 80px; /* 상단 마진 추가 */
+}
+
+.category {
+  margin-bottom: 20px;
+}
+
+.category h3 {
+  cursor: pointer;
+  background-color: #CDA47A;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.category h3 .left {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.category-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.category-name {
+  text-align: left;
+}
+
+.toggle-icon {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.favorite-items {
+  margin-top: 10px;
+  padding-left: 20px;
+  background-color: #F8EDD0;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.favorite-item {
+  cursor: pointer;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #666;
+  border-radius: 5px;
+  background-color: #CDA47A;
+  color: #fff;
+}
+
+.restaurant-details {
+  padding: 20px;
+  background-color: #CED5B2;
+  color: #666;
+  border-radius: 5px;
+}
+
+.restaurant-details h2 {
+  margin-bottom: 20px;
+}
+
+.restaurant-details p {
+  margin-bottom: 10px;
+}
+
+.restaurant-details button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #CDA47A;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 0.4cm; /* 두 버튼 사이에 2cm 간격 추가 */
+}
+
+.restaurant-details button:last-child {
+  margin-right: 0; /* 마지막 버튼은 오른쪽 마진을 없앰 */
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #CED5B2;
+  color: #CED5B2;
+  padding: 20px;
+  border-radius: 5px;
+  width: 80%;
+  max-width: 600px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.75);
+}

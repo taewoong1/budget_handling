@@ -1,0 +1,48 @@
+.monthly-container {
+  background-color: #CED5B2;
+  color: black;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px auto;
+  max-width: 900px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2, h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.summary {
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #e8f5e9;
+}
+
+.summary div {
+  margin: 5px 0;
+}
+
+.alert {
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.alert.green {
+  background-color: #DFF2BF;
+  color: #4F8A10;
+}
+
+.alert.red {
+  background-color: #FFBABA;
+  color: #D8000C;
+}
+
+.line-chart {
+  margin-top: 40px;
+}

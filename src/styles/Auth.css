@@ -1,0 +1,61 @@
+/* @font-face 규칙 추가 */
+@font-face {
+  font-family: 'TmoneyRoundWindExtraBold';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/TmoneyRoundWindExtraBold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 기본 스타일 설정 */
+body {
+  margin: 0;
+  font-family: 'TmoneyRoundWindExtraBold', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  background-color: #181818; /* 배경색을 어두운 색으로 설정 */
+  color: whiteF; /* 텍스트 색상을 흰색으로 설정 */
+}
+
+/* Auth.css */
+.auth-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: black;
+  }
+  
+  .auth-container h2 {
+    margin-bottom: 20px;
+  }
+  
+  .auth-container form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+  }
+  
+  .auth-container form input {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    color:black;
+  }
+  
+  .auth-container form button {
+    padding: 10px;
+    background-color:#CDA47A;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'TmoneyRoundWindExtraBold', sans-serif; /* 글씨체를 설정 */
+  }
+  
+  .auth-container form button:hover {
+    background-color: #666;
+  }
+  
+  .error-message {
+    color: red;
+    margin-top: 10px;
+  }  

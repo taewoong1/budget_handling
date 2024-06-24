@@ -1,0 +1,23 @@
+/* @font-face 규칙 추가 */
+@font-face {
+  font-family: 'TmoneyRoundWindExtraBold';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/TmoneyRoundWindExtraBold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 기본 폰트 설정 */
+body {
+  margin: 0;
+  font-family: 'TmoneyRoundWindExtraBold', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif; /* 기본 폰트를 'TmoneyRoundWindExtraBold'로 설정하고, fallback 폰트를 지정합니다 */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 코드 블록의 폰트 설정 */
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

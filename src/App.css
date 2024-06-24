@@ -1,0 +1,228 @@
+ /* @font-face 규칙 추가 */
+ @font-face {
+  font-family: 'TmoneyRoundWindExtraBold';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/TmoneyRoundWindExtraBold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'TmoneyRoundWindExtraBold', sans-serif; /* 기본 폰트를 TmoneyRoundWindExtraBold로 설정 */
+  background: #fdf6e3; /* 전체 앱 배경을 크림색으로 변경 */
+  color: #333333;
+}
+
+/* Calendar Container */
+.calendar-container {
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto 20px;
+  background-color: #ffffff; /* 달력 배경을 흰색으로 변경 */
+  color: #333333;
+  border-radius: 10px; /* 모서리를 둥글게 설정 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 부드러운 그림자 추가 */
+  border: 1px solid #ddd; /* 테두리 추가 */
+}
+
+/* Calendar Header */
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f5f5f5; /* 헤더 배경색을 밝은 회색으로 변경 */
+  padding: 10px;
+  border-radius: 10px; /* 헤더의 모서리를 둥글게 설정 */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 부드러운 그림자 추가 */
+}
+
+/* nav-button 클래스에 폰트 적용 */
+.nav-button {
+  font-family: 'TmoneyRoundWindExtraBold', sans-serif !important; /* 폰트를 TmoneyRoundWindExtraBold로 설정, !important 추가 */
+  background-color: #CDA47A !important;
+  border: none;
+  padding: 5px 10px;
+  color: white !important;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.nav-button:hover {
+  background-color: #a07756 !important;
+}
+
+.summary {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+  padding: 10px;
+  background-color: #f5f5f5; /* 요약 부분 배경색을 밝은 회색으로 변경 */
+  border-radius: 10px; /* 요약 부분의 모서리를 둥글게 설정 */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 부드러운 그림자 추가 */
+  border: 1px solid #ddd; /* 테두리 추가 */
+}
+
+/* Calendar Body */
+.calendar-body {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.day-header {
+  text-align: center;
+  font-weight: bold;
+  background-color: #fdf6e3; /* 요일 헤더 배경색을 동일한 크림색으로 설정 */
+  padding: 10px;
+  border-radius: 5px;
+  color: #333333;
+}
+
+.day-header:nth-child(1) {
+  color: red; /* 일요일 글자를 빨간색으로 변경 */
+}
+
+.day-header:nth-child(7) {
+  color: blue; /* 토요일 글자를 파란색으로 변경 */
+}
+
+.day-cell {
+  display: flex;
+  flex-direction: column; /* 수직 정렬 */
+  justify-content: space-between; /* 공간을 균등하게 배분 */
+  align-items: flex-start; /* 왼쪽 정렬 */
+  background-color: #ffffff; /* 날짜 셀 배경색을 흰색으로 변경 */
+  padding: 15px; /* 패딩 조정 */
+  height: 50px; /* 날짜 셀 높이 조정 */
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 부드러운 그림자 추가 */
+  border: 1px solid #ddd; /* 테두리 추가 */
+}
+
+.day-cell:hover {
+  background-color: #eee; /* 호버 시 배경색을 약간 더 밝게 변경 */
+}
+
+.day-cell.empty {
+  background-color: transparent;
+  cursor: default;
+  border: none; /* 빈 셀의 테두리 제거 */
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  color: #333333;
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.popup-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.expense-item {
+  margin-bottom: 10px;
+}
+
+.new-category {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.new-category input {
+  flex: 1;
+  margin-right: 10px;
+}
+
+button {
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #CDA47A !important; /* 버튼 배경색을 지정된 색으로 변경 */
+  color: white !important;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #a07756 !important; /* 호버 시 색상 변경 */
+}
+
+.save-message {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #CDA47A !important; /* 메시지 배경색을 지정된 색으로 변경 */
+  color: white !important;
+  padding: 10px 20px;
+  border-radius: 5px;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.day-number {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+.day-total {
+  font-size: 0.8em;
+  color: #CED5B2;
+  position: absolute;
+  bottom: 5px;
+  left: 5px; /* 왼쪽 하단에 위치 */
+}
+
+.day-cell {
+  position: relative;
+}
+
+.day-cell:nth-child(7n+1) .day-number { /* 일요일 숫자를 빨간색으로 변경 */
+  color: red;
+}
+
+.day-cell:nth-child(7n) .day-number { /* 토요일 숫자를 파란색으로 변경 */
+  color: blue;
+}
+
+/* App Header */
+.App-header {
+  background-color: #CDA47A !important; /* 배경색을 지정된 색으로 변경 */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white !important;
+}
+
+/* 달력, 월별, 통계 버튼 색상 변경 */
+button.nav-button,
+button.nav-button:hover,
+button {
+  background-color: #CDA47A !important; /* 버튼 배경색을 지정된 색으로 변경 */
+  color: white !important;
+}
+
+button:hover {
+  background-color: #a07756 !important; /* 호버 시 색상 변경 */
+}
+
+/* Second Image Background Color */
+.some-class-for-second-image {
+  background-color: #CDA47A !important; /* 배경색을 지정된 색으로 변경 */
+}
