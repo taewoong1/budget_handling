@@ -13,7 +13,7 @@ const mapContainerStyle = {
   height: '400px',
 };
 
-const API_KEY = 'AIzaSyDmrB4NIQwns1iSsJoXHKuLoYRTBhf3vkA';
+const API_KEY = 'your key';
 
 const scriptOptions = {
   async: true,
